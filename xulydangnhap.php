@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("dataprovider.php");
     $tendangnhap = $_POST['tendangnhap'];
     $password = $_POST['password'];
@@ -12,12 +13,15 @@
         } else{
             if ($row['manhomquyen']>0) {
             // Đăng nhập thành công quản lý
+            $_SESSION['user'] = $row['tendangnhap'];
+            $_SESSION['role'] = 'admin';
             echo 'successAD';
             } else {
             // Đăng nhập thành công khách hàng
+            $_SESSION['user'] = $row['tendangnhap'];
+            $_SESSION['role'] = 'customer';
             echo 'successKH';
             }
-
         } 
     } else {
         // Đăng nhập thất bại
