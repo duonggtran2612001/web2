@@ -47,7 +47,7 @@
 				});
 				});
 			</script>
-			<p>Chưa có tài khoản? <a href="register.php">Đăng ký ngay</a></p>
+			<p>Chưa có tài khoản? <a href="index.php?act=DK">Đăng ký ngay</a></p>
 		</section>
 	</main>
 		

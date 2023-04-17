@@ -12,6 +12,9 @@
                 case "TT": 
                     include('news.php');
                     break;
+                case "DK":
+                    include('register.php');
+                    break;
             }
         } else include('front_page.php')
     ?>

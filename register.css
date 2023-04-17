@@ -75,7 +75,7 @@ section {
     margin-bottom: 5px;
   }
   
-  .register input[type="text"], .register input[type="tel"], .register input[type="password"] {
+  .register input[type="email"], .register input[type="text"], .register input[type="tel"], .register input[type="password"] {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;

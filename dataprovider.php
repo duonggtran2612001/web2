@@ -1,8 +1,8 @@
 <?php
     class dataprovider {
         private $db="quanlybanhang";
-        private $username="adminbanhang";
-        private $password="123456";
+        private $username="root";
+        private $password="";
         private $host="localhost";
         private $conn;
 
