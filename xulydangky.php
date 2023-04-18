@@ -6,7 +6,6 @@
     $email=$_POST['email'];
     $phone=$_POST['phone'];
     $status = '';
-    var_dump($_POST);
     $tmp = new dataprovider(); 
     $conn=$tmp->executeQuery("select * from khachhang where MaKH ='$useraccount' or Email='$email'");
     if (mysqli_num_rows($conn) > 0){
