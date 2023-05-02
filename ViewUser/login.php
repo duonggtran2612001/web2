@@ -26,16 +26,16 @@
 
 				$.ajax({
 				type: 'POST',
-				url: 'xulydangnhap.php',
+				url: '../Controller/xulydangnhap.php',
 				data: {
 				tendangnhap: tendangnhap,
 				password: password
 				},
 				success: function(result) {
-				if (result == 'successAD') {
-					window.location.href = 'quanly.php';
+				if (result == 'success') {
+					window.location.href = '../ViewAdmin/web_admin.php';
 				} else if (result == 'successKH') {
-					window.location.href = 'index.php';
+					window.location.href = '../ViewUser/index.php';
 				} else if (result == 'blocked') {
 					alert('Your account is blocked!');
 				} else {

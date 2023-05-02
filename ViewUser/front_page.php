@@ -1,7 +1,7 @@
 <img src="https://img.cdn.vncdn.io/cdn-pos/518fda-134540/bn/20221026_zlRcbtLcsrJf4Yzx3onli4dQ.jpg" alt="">
 <main>
     <?php
-            include("dataprovider.php");
+            include("../Model/dataprovider.php");
             //$id = $_GET['id'];
             $tmp =new dataprovider();
             $conn = $tmp->executeQuery('select * from sanpham limit 0,3');

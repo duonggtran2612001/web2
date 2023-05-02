@@ -13,7 +13,7 @@
     </nav>
 	<script>
 		function logout() {
-		window.location.href = "xulydangxuat.php";
+		window.location.href = "../Controller/xulydangxuat.php";
 		}
 	</script>
 </header>
